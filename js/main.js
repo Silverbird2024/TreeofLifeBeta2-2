@@ -269,8 +269,10 @@ $App.NAB.PageNumber = 15;
 $App.NAB.PageID = "save";
 $scope.PushButton35_click = function() {$scope.GotoPage( "TreeHome" );};
 $scope.PushButton39_click = function() {$scope.VarToFile($App.DateInputwork,"myfile.txt");};
-$scope.PushButton33_click = function() {$App.DateInputwork = "Base Reality 1:"+$App.BR01+"Base Reality 2: "+$App.BR02+"FF1: "+$App.FF01+"FF2:"+$App.FF02+"Prayer1:"+$App.Prayer1+"Prayer2:"+$App.Prayer2+"Work1:"+$App.work01+"Work2: "+$App.work02+"Starkie1: "+$App.Starkie01+"Starkie2 "+$App.Starkie02+"Starskie 3 "+$App.Starkie03+"Starakie 4 "+$App.Starkie04+"Kingsway1: "+$App.kingsway01+"Kingsway2: "+$App.kingsway02+" Order1: "+$App.Order01+" Order2: "+$App.Order02+" Reset1:"+$App.Reset01+" Reset2: "+$App.Reset02+" Health1:"+$App.health01+" Health2:"+$App.health02+" Health3: "+$App.health03+" Health4: "+$App.health04+" Health5: "+$App.health10+" Health6: "+$App.health11+" Health7: "+$App.health12+" Health8: "+$App.health13;
+$scope.PushButton33_click = function() {$App.DateInputwork = "Base Reality 1:"+$App.BR01+"Base Reality 2:"+$App.BR02+" FF1:"+$App.FF01+"FF2:"+$App.FF02+"Prayer1:"+$App.Prayer1+" Prayer2:"+$App.Prayer2+" Work1:"+$App.work01+" Work2: "+$App.work02+" Starkie1: "+$App.Starkie01+" Starkie2 "+$App.Starkie02+" "+$App.Starkie03+" "+$App.Starkie04+" Kingsway1: "+$App.kingsway01+" Kingsway2: "+$App.kingsway02+" Order: "+$App.Order01+" "+$App.Order02+" Reset: "+$App.Reset01+" "+$App.Reset02+" Health:"+$App.health01+" "+$App.health02+" "+$App.health03+" "+$App.health04+" "+$App.health10+" "+$App.health11+" "+$App.health12+" "+$App.health13;
 $scope.DisableObject("PushButton39",false);};
+$scope.PushButton45_click = function() {window.open("mailto:SilverbirdApp@outlook.com", "_blank");
+navigator.clipboard.writeText($App.DateInputwork);};
 });
 NeoApp.controller("NewDialog_Ctrl", function($scope,$rootScope,$modalInstance,$filter,$window) {
  $scope.CloseDialog = function() {
