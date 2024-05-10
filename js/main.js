@@ -168,7 +168,6 @@ $scope.PushButton51_click = function() {$scope.GotoPage( "TreeHome" );};
 $scope.PushButton52_click = function() {$scope.GotoPage( "Decisions2" );};
 $scope.Pager11_prevclick = function() {$scope.GotoPrevPage();};
 $scope.Pager11_nextclick = function() {$scope.GotoNextPage();};
-$scope.PushButton56_click = function() {$App.DecisionsS = localStorage.getItem("DecS");};
 $scope.TextArea37_change = function() {localStorage.setItem("DecS",$App.DecisionsS);};
 });
 NeoApp.controller("Decisions2_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
@@ -358,7 +357,7 @@ $App.NAB.PageNumber = 19;
 $App.NAB.PageID = "save";
 $scope.PushButton35_click = function() {$scope.GotoPage( "TreeHome" );};
 $scope.PushButton39_click = function() {$scope.VarToFile($App.DateInputwork,"myfile.txt");};
-$scope.PushButton33_click = function() {$App.DateInputwork = "Base Reality 1:"+$App.BR01+"Base Reality 2:"+$App.BR02+" FF1:"+$App.FF01+"FF2:"+$App.FF02+" App Dev: "+$App.Appdev01+" "+$App.Appdev02+" "+$App.Appdev03+" "+$App.Appdev04+" Prayer1:"+$App.Prayer1+" Prayer2:"+$App.Prayer2+" Work1:"+$App.work01+" Work2: "+$App.work02+" "+$App.work02+" "+$App.work03+" "+$App.work04+" Starkie1: "+$App.Starkie01+" Starkie2 "+$App.Starkie02+" "+$App.Starkie03+" "+$App.Starkie04+" Kingsway1: "+$App.kingsway01+" Kingsway2: "+$App.kingsway02+" Order: "+$App.Order01+" "+$App.Order02+" Reset: "+$App.Reset01+" "+$App.Reset02+" Health:"+$App.health01+" "+$App.health02+" "+$App.health03+" "+$App.health04+" "+$App.health10+" "+$App.health11+" "+$App.health12+" "+$App.health13;
+$scope.PushButton33_click = function() {$App.DateInputwork = "Base Reality 1:"+$App.BR01+"Base Reality 2:"+$App.BR02+" FF1:"+$App.FF01+"FF2:"+$App.FF02+" App Dev: "+$App.Appdev01+" "+$App.Appdev02+" "+$App.Appdev03+" "+$App.Appdev04+" Prayer1:"+$App.Prayer1+" Prayer2:"+$App.Prayer2+" Work1:"+$App.work01+" Work2: "+$App.work02+" "+$App.work02+" "+$App.work03+" "+$App.work04+" Starkie1: "+$App.Starkie01+" Starkie2 "+$App.Starkie02+" "+$App.Starkie03+" "+$App.Starkie04+" Kingsway1: "+$App.kingsway01+" Kingsway2: "+$App.kingsway02+" Order: "+$App.Order01+" "+$App.Order02+" Reset: "+$App.Reset01+" "+$App.Reset02+" Health:"+$App.health01+" "+$App.health02+" "+$App.health03+" "+$App.health04+" "+$App.health10+" "+$App.health11+" "+$App.health12+" "+$App.health13+" Deciosions"+$App.DecisionsS+$App.Decisions01+$App.Decisions02+$App.Decisions03+$App.Decisions04+" ";
 $scope.DisableObject("PushButton39",false);};
 $scope.PushButton45_click = function() {window.open("mailto:SilverbirdApp@outlook.com", "_blank");
 navigator.clipboard.writeText($App.DateInputwork);};
